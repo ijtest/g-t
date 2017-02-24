@@ -14,7 +14,7 @@ install:
 #  - pip install -r ./lecture7/requirements.txt
 
 script: 
-  - python -m test discover -v ./ # command to run unit test
+  - python -m unittest discover -v . # command to run unit test
   - coverage run ./test.py # command to run code coverage
 
 #can do additional things, say send out reports, which we will discuss next time
